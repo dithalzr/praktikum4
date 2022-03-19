@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tombol Sembuyinkan dan Tampilkan</title>
+	<script src="jquery.js"></script>
+	<script>
+   		$(document).ready(function() {
+   			$("#tbl_sembunyi").click(function() {
+   				$(".upn").hide();
+   			})
+  
+     		$("#tbl_tampil").click(function() {
+       			$(".upn").show();
+     		})
+     		$("#sembunyi").click(function() {
+   				$(".kupu").hide();
+   			})
+  
+     		$("#tampil").click(function() {
+       			$(".kupu").show();
+     		})
+		});
+   </script>
+   <style type="text/css">
+   		.upn {
+   			width: 200px;
+   			height: 200px;
+   			padding: 10px 10px;
+   		}
+   		.kupu {
+   			width: 200px;
+   			height: 150px;
+   			padding: 10px 10px;
+   		}
+   		button {
+   			margin: 5px 10px;
+   		}
+   </style>
+</head>
+<body>
+	<button id="tbl_sembunyi">Sembunyikan</button>
+	<button id="tbl_tampil">Tampilkan</button>
+	<br>
+	<img class="upn" src="upn.png">
+	<br>
+	<button id="sembunyi">Sembunyikan</button>
+	<button id="tampil">Tampilkan</button>
+	<br>
+	<img class="kupu" src="kupu.png">
+</body>
+</html>

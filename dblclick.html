@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event Double CLick</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#persegi1").dblclick(function() {    
+				$("#persegi1").css("background","red");
+     		});
+			$("#persegi2").dblclick(function() {    
+				$("#persegi2").css("background","red");
+     		});
+     		$("#persegi3").dblclick(function() {    
+				$("#persegi3").css("background","red");
+     		});
+     		$("#persegi4").dblclick(function() {    
+				$("#persegi4").css("background","red");
+     		});
+		});
+	</script>
+	<style type="text/css">
+		.persegi {
+			background: yellow;
+			width: 100px;
+			height: 100px;
+			margin: 5px 5px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<p>Klik 2x pada setiap kotak unuk mengubah warnanya</p>
+	<div class="persegi" id="persegi1"></div>
+	<div class="persegi" id="persegi2"></div>
+	<div class="persegi" id="persegi3"></div>
+	<div class="persegi" id="persegi4"></div>
+</body>
+</html>
